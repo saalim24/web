@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    font-family: 'Nunito', sans-serif;    
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding: 3rem;
+}
+
+.input-field{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+
+}
+.input{
+    text-align: center;
+    height: 3rem;
+    width: 30rem;
+    border-radius: 1rem;
+    border: solid 1px black;
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.rangesliderbox{
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.slider{
+    width: 20rem;
+}
+.buttons{
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.buttons input{
+    margin: 1rem;
+}
+.large{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.countofdigits{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+footer
+{
+    position: absolute;
+    bottom:0;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media screen and (max-width:600px) {
+    .input{
+        width: 20rem;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .input-field{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-height:700px)
+{
+    .input-field{
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <main>
+      <div class="input-field">
+        <input type="text" class="input" id="textfield" />
+      </div>
+      <div> 
+        <h2 class="countofdigits" id="countdigtext">8</h2>
+      </div>
+      <div class="rangesliderbox">
+        <input
+          type="range"
+          min="8"
+          max="24"
+          step="1"
+          class="slider"
+          id="digits"
+          value="8"
+          oninput="update()"
+        />
+      </div>
+      <div class="buttons">
+        <label for="uppercase">Uppercase</label>
+        <input type="checkbox" class="large" id="uppercase" />
+        <br />
+        <label for="Numbers">Numbers</label>
+        <input type="checkbox" class="large" id="numbers" />
+        <br />
+        <label for="characters">Special characters</label>
+        <input type="checkbox" class="large" id="specialchar" />
+      </div>
+    </main>
+    <footer>
+      <p>
+        Made by Saalim
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
