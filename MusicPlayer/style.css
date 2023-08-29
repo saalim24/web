@@ -61,10 +61,10 @@ nav ul li {
     width: 80vw;
     text-align: center;
 }
-.songItemContainer
+/* .songItemContainer
 {
 
-}
+} */
 .songItem{
     height: 50px;
     display: flex;
