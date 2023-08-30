@@ -105,16 +105,26 @@ makeAllPlays = () => {
 Array.from(document.getElementsByClassName("songItemPlay")).forEach(
   (element) => {
     element.addEventListener("click", (e) => {
-      makeAllPlays();
-      songIndex = parseInt(e.target.id);
-      e.target.classList.remove("fa-play");
-      e.target.classList.add("fa-pause");
-      audioElement.src = `songs/${songIndex}.mp3`;
-      audioElement.currentTime = 0;
-      audioElement.play();
-      masterPlay.classList.remove("fa-play");
-      masterPlay.classList.add("fa-pause");
-      masterSongName.innerText = songs[songIndex].songName;
+      if (e.target.classList.contains("fa-play")) {
+        makeAllPlays();
+        songIndex = parseInt(e.target.id);
+        e.target.classList.remove("fa-play");
+        e.target.classList.add("fa-pause");
+        audioElement.src = `songs/${songIndex}.mp3`;
+        audioElement.currentTime = 0;
+        audioElement.play();
+        masterPlay.classList.remove("fa-play");
+        masterPlay.classList.add("fa-pause");
+        masterSongName.innerText = songs[songIndex].songName;
+        gif.style.opacity = 1;
+      } else {
+        audioElement.pause();
+        masterPlay.classList.remove("fa-pause");
+        masterPlay.classList.add("fa-play");
+        e.target.classList.remove("fa-pause");
+        e.target.classList.add("fa-play");
+        gif.style.opacity = 0;
+      }
     });
   }
 );
