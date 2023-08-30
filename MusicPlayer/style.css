@@ -60,6 +60,7 @@ nav ul li {
 #ProgressBar{
     width: 80vw;
     text-align: center;
+    cursor: pointer;
 }
 /* .songItemContainer
 {
@@ -89,6 +90,8 @@ nav ul li {
 }
 .songInfo
 {
+    font-family: 'Varela Round',sans-serif;
+    color: white;
     position: absolute;
     left: 10vw;
 }
