@@ -88,7 +88,9 @@ masterPlay.addEventListener("click", () => {
 
 audioElement.addEventListener("timeupdate", () => {
   //update seekbar
-  progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+  progress = parseInt(
+    (audioElement.currentTime / audioElement.duration) * 100
+  );
   myProgressBar.value = progress;
 });
 
@@ -143,6 +145,9 @@ document.getElementById("next").addEventListener("click", () => {
   masterPlay.classList.remove("fa-play");
   masterPlay.classList.add("fa-pause");
   masterSongName.innerText = songs[songIndex].songName;
+  makeAllPlays();
+  document.getElementById(`${songIndex}`).classList.add("fa-pause");
+  document.getElementById(`${songIndex}`).classList.remove("fa-play");
 });
 document.getElementById("previous").addEventListener("click", () => {
   if (songIndex <= 0) songIndex = 0;
@@ -154,4 +159,7 @@ document.getElementById("previous").addEventListener("click", () => {
   masterPlay.classList.remove("fa-play");
   masterPlay.classList.add("fa-pause");
   masterSongName.innerText = songs[songIndex].songName;
+  makeAllPlays();
+  document.getElementById(`${songIndex}`).classList.add("fa-pause");
+  document.getElementById(`${songIndex}`).classList.remove("fa-play");
 });
