@@ -10,7 +10,7 @@ const http = require("http");
 
 // fs.writeFileSync("./txt/output.txt", textout);
 const server = http.createServer((req, res) => {
-  console.log(req);
+  console.log(req.url);
   res.end("hello From server");
 });
 server.listen(8000, "127.0.0.1", () => {
