@@ -2,90 +2,537 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Welcome to Islamia College</title>
+    <link rel="icon" type="image/png" href="img/logo3.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <h1>Islamia College Of Science And Commerce</h1>
-        <div class="elementsdrop">
-          <div class="dropdown">
-            <button class="dropbtn">Courses</button>
-            <div class="dropdown-content">
-              <a href="#">BCA</a>
-              <a href="#">MCA</a>
-              <a href="#">BSC.IT</a>
+  <body id="home">
+    <div class="wrapper">
+      <header id="header" class="">
+        <div class="header-wrapper">
+          <div class="header-container">
+            <div>
+              <div class="logo-name">
+                <div class="logo">
+                  <a href="index.html" title=""
+                    ><img src="img/logo3.png" alt="logo"
+                  /></a>
+                </div>
+                <div class="name">
+                  <a href="index.html" title="">
+                    <h5>Islamia College Of Science and Commerce</h5>
+                    <h5 class="primary-color">Srinagar</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header-links">
+              <a
+                href="#"
+                data-toggle="popover"
+                title="Address"
+                data-content="hawal, sringar"
+                data-placement="bottom"
+                ><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i
+              ></a>
+
+              <a
+                href="#"
+                data-toggle="popover"
+                title="Phone No."
+                data-content="9149431380"
+                data-placement="bottom"
+                ><i class="fa fa-phone fa-lg" aria-hidden="true"></i
+              ></a>
+
+              <a
+                href="#"
+                data-toggle="popover"
+                title="Email"
+                data-content="islamia@gmail.com"
+                data-placement="bottom"
+                ><i class="fa fa-envelope fa-lg" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
-          <a href="#">Admission</a>
-          <a href="#">About</a>
-          <a href="#">Contact Us</a>
         </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="image">
-          <img src="dark.jpg" alt="darkimg" />
-          <p class="text">
-            Nestled in the heart of a picturesque town, our college stands as a
-            beacon of knowledge and opportunity, where each day dawns with the
-            promise of new discoveries and academic excellence. Founded decades
-            ago, its rich history and tradition are woven into the very fabric
-            of the institution, providing a sturdy foundation for the ambitious
-            minds that grace its halls. With ivy-covered buildings that exude an
-            air of wisdom and serenity, it's not just a place of learning but a
-            sanctuary for intellectual growth and personal development. The
-            college campus sprawls across acres of lush greenery, creating a
-            harmonious blend of nature and academia. Tall oak trees offer shade
-            to students engrossed in their studies under the clear blue sky,
-            while vibrant gardens burst with a riot of colors in every season,
-            serving as a testament to the institution's commitment to
-            sustainability and environmental consciousness. Inside the
-            classrooms, the hum of eager minds engaged in spirited discussions
-            is the soundtrack of our academic journey. Professors, not just
-            educators but mentors, guide students through complex subjects,
-            igniting the spark of curiosity and critical thinking. The diverse
-            student body reflects the global village we live in, fostering an
-            environment where cultures and ideas intermingle, broadening
-            horizons and challenging preconceptions. The college library, a
-            treasure trove of knowledge, is a sacred space where students embark
-            on intellectual quests, seeking answers in the pages of books and
-            scholarly journals. The state-of-the-art laboratories are hives of
-            innovation, where scientific breakthroughs and technological
-            advancements take shape, and students experiment with ideas that may
-            change the world. Extracurricular activities thrive here, providing
-            a holistic education that extends beyond textbooks. The sports
-            fields resonate with the cheers of athletes, the stage lights up
-            with dramatic performances, and art studios inspire creativity that
-            knows no bounds. Clubs and organizations cater to diverse interests,
-            from debating societies to volunteer groups dedicated to making a
-            positive impact on the community. But it's not just about academics
-            and activities; it's about the sense of belonging and camaraderie
-            that students find within these walls. Lifelong friendships are
-            forged during late-night study sessions, and the college's bustling
-            cafeteria becomes the backdrop for laughter, debates, and heartfelt
-            conversations. Our commitment to excellence extends to the career
-            development center, where students are equipped with the skills and
-            knowledge needed to thrive in the professional world. Internship
-            opportunities abound, connecting students with industry leaders and
-            offering real-world experiences that pave the way for successful
-            careers. As the sun sets behind the campus, casting a warm, golden
-            hue over the historic buildings, the college's spirit of innovation
-            and learning continues to burn brightly. It's a place where dreams
-            are nurtured, ideas take flight, and the pursuit of knowledge is a
-            lifelong journey. Our college is more than just an institution; it's
-            a home away from home, a community of scholars, and a hub of
-            limitless possibilities, where the future is envisioned, and leaders
-            are born.
-          </p>
+        <nav>
+          <div class="navbar navbar-inverse navbar-custom" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >Institute <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu multi-level">
+                      <li><a href="#">About</a></li>
+                      <li>
+                        <a href="#">Director's Message</a>
+                      </li>
+                      <li><a href="#">Board of Governors</a></li>
+                      <li>
+                        <a href="#">Society Members</a>
+                      </li>
+                      <li>
+                        <a href="#">Academic Council</a>
+                      </li>
+                      <li>
+                        <a href="#">Finance Committee</a>
+                      </li>
+                      <li><a href="#">RTI</a></li>
+                      <li><a href="#">MOU</a></li>
+                      <li class="dropdown-submenu">
+                        <a
+                          href="#"
+                          class="dropdown-toggle"
+                          data-toggle="dropdown"
+                          >Linkages</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >Academics <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu multi-level">
+                      <li class="dropdown-submenu">
+                        <a
+                          href="#"
+                          class="dropdown-toggle"
+                          data-toggle="dropdown"
+                          >BCA</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a href="#">CSE</a></li>
+                          <li><a href="#">IT</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a
+                          href="#"
+                          class="dropdown-toggle"
+                          data-toggle="dropdown"
+                          >MCA</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li><a href="#">CSE</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Ph.D</a></li>
+                      <li>
+                        <a href="#">Academic Calender</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >Admission <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu multi-level">
+                      <li><a href="#">B.Tech</a></li>
+                      <li><a href="#">M.Tech</a></li>
+                      <li><a href="#">Ph.D</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >People <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu multi-level">
+                      <li><a href="#">Faculty</a></li>
+                      <li>
+                        <a href="#">Visiting Faculty</a>
+                      </li>
+                      <li><a href="#">Staff</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                      >More <b class="caret"></b
+                    ></a>
+                    <ul class="dropdown-menu multi-level">
+                      <li><a href="#">FAQs</a></li>
+                      <li>
+                        <a href="#">Student's Corner</a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank">Moodle</a>
+                      </li>
+                      <li><a href="#">Library</a></li>
+                      <li><a href="#">Invited Talks</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Photo Gallery</a></li>
+                </ul>
+              </div>
+              <!--/.nav-collapse -->
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- /header -->
+
+      <!-- carousel -->
+      <div class="carousel-wrapper">
+        <div class="carousel" style="margin: 0 auto">
+          <div class="carousel-items">
+            <img
+              height="400px"
+              src="http://islamiacollege.edu.in/images/gallery/pic2.jpg"
+            />
+            <div></div>
+          </div>
+          <div class="carousel-items">
+            <img
+              height="400px"
+              src="http://islamiacollege.edu.in/images/gallery/pic3.jpg"
+              alt="Gallery"
+            />
+            <div></div>
+          </div>
+          <div class="carousel-items">
+            <img
+              height="400px"
+              src="http://islamiacollege.edu.in/images/gallery/img1.jpg"
+              alt="Students"
+            />
+            <div></div>
+          </div>
+          <div class="carousel-items">
+            <img
+              height="400px"
+              src="http://islamiacollege.edu.in/images/gallery/img5.jpg"
+              alt="Talk"
+            />
+            <div></div>
+          </div>
+          <div class="carousel-items">
+            <img
+              height="400px"
+              src="http://islamiacollege.edu.in/images/gallery/pic4.jpg"
+              alt="Winners"
+            />
+            <div></div>
+          </div>
         </div>
       </div>
-    </main>
 
-    <script src=" script.js"></script>
+      <!-- Announcements, Events, News -->
+      <div class="widgets-wrapper">
+        <div class="widgets-container">
+          <!-- Edit this section for important announcements.-->
+          <div class="alert alert-warning text-center">
+            Institute invites applications for
+            <a class="alert-link" href="#"
+              >MCA and PhD programs - Academic Year 2023-24</a
+            >
+          </div>
+
+          <!-- Announcements -->
+          <div class="col-sm-4" id="announcements">
+            <div class="announcement-content">
+              <div class="widgets-title"><h2>Announcements</h2></div>
+              <ul id="announcement-list">
+                <li>
+                  For admissions to
+                  <b>M.Tech. and Ph.D. programs</b> visit:<br /><a
+                    href="#"
+                    target="_blank"
+                  >
+                    PG-Admission-Portal.</a
+                  >
+                </li>
+                <li>
+                  For queries related to <b>BCA programs </b>contact us at:
+                  &nbsp; &nbsp;
+                  <span style="font-size: 12px; font-weight: bold; color: Black"
+                    ><a href="mailto:icsc@gmail.com"
+                      >admissions@icsc.com</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  Government of India Schemes for Students' Welfare
+                  <a
+                    href="https://www.vidyalakshmi.co.in/Students/indexPopup"
+                    target="_blank"
+                    >www.vidyalakshmi.co.in </a
+                  ><a
+                    href="https://www.scholarships.gov.in/main.do"
+                    target="_blank"
+                  >
+                    www.scholarships.gov.in
+                  </a>
+                </li>
+              </ul>
+              <div id="announcement-list-pagination">
+                <a id="announcement-list-previous" href="#">
+                  <span
+                    ><i class="fa fa-chevron-left" aria-hidden="true"></i
+                  ></span>
+                </a>
+                <a id="announcement-list-next" href="#">
+                  <span
+                    ><i class="fa fa-chevron-right" aria-hidden="true"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Events -->
+          <div class="col-sm-4" id="events">
+            <div class="events-content">
+              <div class="widgets-title"><h2>Events</h2></div>
+              <ul id="events-list">
+                <li>
+                  <!-- Events -->
+                  <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                      <span>
+                        <!-- Day -->
+                        <div class="day">9</div>
+                        <!-- Month Short Form (first three letters) -->
+                        <div class="month">Apr</div>
+                      </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">First Annual Institute Day</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                      <span>
+                        <!-- Day -->
+                        <div class="day">12</div>
+                        <!-- Month Short Form (first three letters) -->
+                        <div class="month">Mar</div>
+                      </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Hackathon 2023</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                      <span>
+                        <!-- Day -->
+                        <div class="day">5</div>
+                        <!-- Month Short Form (first three letters) -->
+                        <div class="month">Mar</div>
+                      </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Sports Festival 2023</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                      <span>
+                        <!-- Day -->
+                        <div class="day">26</div>
+                        <!-- Month Short Form (first three letters) -->
+                        <div class="month">Jan</div>
+                      </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Republic Day</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="event-container">
+                    <!-- Date -->
+                    <div class="date">
+                      <span>
+                        <!-- Day -->
+                        <div class="day">14</div>
+                        <!-- Month Short Form (first three letters) -->
+                        <div class="month">Jan</div>
+                      </span>
+                    </div>
+                    <!-- Event-Description -->
+                    <div class="event-text">Basketball Championship</div>
+                  </div>
+                </li>
+              </ul>
+              <div id="events-list-pagination">
+                <a id="events-list-previous" href="#">
+                  <span
+                    ><i class="fa fa-chevron-left" aria-hidden="true"></i
+                  ></span>
+                </a>
+                <a id="events-list-next" href="#">
+                  <span
+                    ><i class="fa fa-chevron-right" aria-hidden="true"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4" id="news">
+            <div class="news-content">
+              <div class="widgets-title"><h2>News</h2></div>
+              <ul id="news-list">
+                <li>Admissions open for 2024 batch</li>
+                <li>Prepare For Upcoming Basketball Match</li>
+                <li>
+                  Many MNC's will be visiting the campus soon like google,amazon
+                  and meta
+                </li>
+                <li>Shoaib Arif's Roll No. is 75</li>
+              </ul>
+              <div id="news-list-pagination">
+                <a id="news-list-previous" href="#">
+                  <span
+                    ><i class="fa fa-chevron-left" aria-hidden="true"></i
+                  ></span>
+                </a>
+                <a id="news-list-next" href="#">
+                  <span
+                    ><i class="fa fa-chevron-right" aria-hidden="true"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-wrapper">
+          <span class="logo"
+            ><img width="100px" src="/img/logo3.png" alt=""
+          /></span>
+          <div class="row">
+            <div class="col-sm-4 address">
+              <strong>Address : </strong> Hawal, Srinagar, Jammu & Kashmir
+            </div>
+            <div class="col-sm-4 links">
+              <div>
+                <a href="#news">News</a>
+                <i class="seperator"></i>
+                <a href="#announcements">Announcement</a>
+                <i class="seperator"></i>
+                <a href="#events">Events</a>
+              </div>
+              <div>
+                <a href="#">Home</a>
+                <i class="seperator"></i>
+                <a href="#">RTI</a>
+                <i class="seperator"></i>
+                <a href="#">MOU</a>
+              </div>
+              <div>
+                <a href="#">Admission</a>
+                <i class="seperator"></i>
+                <a href="#">Student</a>
+                <i class="#"></i>
+                <a href="#">Faculty</a>
+              </div>
+            </div>
+            <div class="col-sm-4 footer-social">
+              <a href="#!"
+                ><i
+                  class="fa fa-facebook"
+                  aria-hidden="true"
+                  title="Official Facebook Page"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa fa-github"
+                  aria-hidden="true"
+                  title="Github Group"
+                ></i
+              ></a>
+              <a href="#!"
+                ><i
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                  title="LinkedIn Profile"
+                ></i
+              ></a>
+              <a href="#!" title=""
+                ><i
+                  class="fa fa-twitter"
+                  aria-hidden="true"
+                  title="Official Twitter Account"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/jquery.paginate.min.js "></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on("click", function (e) {
+          $('[data-toggle="popover"]').not(this).popover("hide");
+        });
+      });
+    </script>
   </body>
 </html>
