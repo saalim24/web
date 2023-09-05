@@ -1,18 +1,21 @@
 const { isUtf8 } = require("buffer");
 const fs = require("fs");
 const http = require("http");
+const { dirname } = require("path");
+const { json } = require("stream/consumers");
 
-// console.log("hello brother");
-// const txt = fs.readFileSync("./txt/input.txt", "utf-8");
-// console.log(txt);
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
+const dataObj = JSON.parse(data);
 
-// const textout = "good boy";
-
-// fs.writeFileSync("./txt/output.txt", textout);
 const server = http.createServer((req, res) => {
-  console.log(req);
-  res.end("hello From server");
+  const pathName = req.url;
+  if (pathName === "/" || pathName === "/overview") res.end("This is overview");
+  else if (pathName == "/api") {
+    res.writeHead(200, { "content-type": "application/json" });
+    res.end(data);
+  }
 });
+
 server.listen(8000, "127.0.0.1", () => {
   console.log("listening to req on port 8000");
 });
