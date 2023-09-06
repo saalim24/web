@@ -5,6 +5,8 @@ const url = require("url");
 const { dirname } = require("path");
 const { json } = require("stream/consumers");
 const replaceTemplate = require("./modules/replacetemplate");
+const slugify = require("slugify");
+
 
 const tempOverview = fs.readFileSync(
   `${__dirname}/templates/template-overview.html`,
@@ -22,24 +24,25 @@ const tempCard = fs.readFileSync(
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
 const dataObj = JSON.parse(data);
 
+const slugs = dataObj.map((el) => slugify(el.productName, { lower: true }));
+console.log(slugs);
 const server = http.createServer((req, res) => {
-  console.log(req.url);
   const { query, pathname } = url.parse(req.url, true);
 
   if (pathname === "/" || pathname === "/overview") {
-    res.writeHead(200, { "content-type": "text/html" });
+    res.writeHead(200, { "Content-type": "text/html" });
     const cardsHtml = dataObj
       .map((el) => replaceTemplate(tempCard, el))
       .join("");
     const output = tempOverview.replace(`{%PRODUCT_CARDS%}`, cardsHtml);
     res.end(output);
   } else if (pathname === "/product") {
-    res.writeHead(200, { "content-type": "text/html" });
+    res.writeHead(200, { "Content-type": "text/html" });
     const product = dataObj[query.id];
     const output = replaceTemplate(templateProduct, product);
     res.end(output);
-  } else if (pathname == "/api") {
-    res.writeHead(200, { "content-type": "application/json" });
+  } else if (pathname === "/api") {
+    res.writeHead(200, { "Content-type": "application/json" });
     res.end(data);
   }
 });
