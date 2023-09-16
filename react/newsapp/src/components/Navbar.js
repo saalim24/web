@@ -1,9 +1,6 @@
-import PropTypes from "prop-types";
 import React, { Component } from "react";
 
 export class Navbar extends Component {
-  static propTypes = {};
-
   render() {
     return (
       <div>
@@ -34,10 +31,31 @@ export class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/about">
+                  <a className="nav-link active" href="/about">
                     About
                   </a>
                 </li>
+                <a className="nav-link active" href="/about">
+                  General
+                </a>
+                <a className="nav-link active" href="/about">
+                  Technology{" "}
+                </a>
+                <a className="nav-link active" href="/about">
+                  Sports
+                </a>
+                <a className="nav-link active" href="/about">
+                  Business
+                </a>
+                <a className="nav-link active" href="/about">
+                  Health
+                </a>
+                <a className="nav-link active" href="/about">
+                  Science
+                </a>
+                <a className="nav-link active" href="/about">
+                  Entertainment
+                </a>
               </ul>
             </div>
           </div>
