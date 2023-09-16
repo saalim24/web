@@ -230,33 +230,22 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="container my-3">
           <h2>NewsMonkey - Top Headlines</h2>
+
           <div className="row">
-            <div className="col-md-4">
-              <NewsItem
-                title="myTitle"
-                description="mydesc"
-                imgUrl="https://c.biztoc.com/p/5f067d170a23f31d/s.webp"
-                newsUrl="TODO"
-              ></NewsItem>
-            </div>
-            <div className="col-md-4">
-              <NewsItem
-                title="myTitle"
-                description="mydesc"
-                imgUrl="https://c.biztoc.com/p/5f067d170a23f31d/s.webp"
-                newsUrl="TODO"
-              ></NewsItem>
-            </div>
-            <div className="col-md-4">
-              <NewsItem
-                title="myTitle"
-                description="mydesc"
-                imgUrl="https://c.biztoc.com/p/5f067d170a23f31d/s.webp"
-                newsUrl="TODO"
-              ></NewsItem>
-            </div>
+            {this.state.articles.map((element) => {
+              return (
+                <div className="col-md-4">
+                  <NewsItem
+                    title="myTitle"
+                    description="mydesc"
+                    imgUrl="https://www.rollingstone.com/wp-content/uploads/2023/09/shawn-fein-united-auto-workers-strike.jpg?w=1600&h=900&crop=1"
+                    newsUrl="TODO"
+                  ></NewsItem>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
